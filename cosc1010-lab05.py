@@ -92,7 +92,15 @@ min_temps = [
 # The use of len() is fine
 # You can do this in two individual loops, or a single loop if you wish 
 max_temp = 0
+for temp in max_temps:
+    if temp > max_temp:
+        max_temp = temp
+
 min_temp = 0
+for temp in min_temps:
+    if temp < min_temp:
+        min_temp = temp
+
 print(f"Max temp = {max_temp}")
 print(f"Min temp = {min_temp}")
 
